@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Headings for Character Creation Page-->
+    <header>
+        <h1>Zombie Survival Game</h1>
+        <h2>Character Creation</h2>
+        <p>Welcome to the character creator for the ultimate zombie survival RPG! Here you can select and customise your playable character and test your knowledge of post-apocalyptic survival.
+        </p>
+    </header>
+    <!--Character Creation Form-->
+    <section>
+    <form id="characterForm">
+        <hr>
+        <label for="playerName">Select Character Name:</label><br>
+        <input name="playerName" type="text"><br>
+        <hr>
+        <legend>Select Character Expertise:</legend><br>
+        <input type="radio" name="characterClass" id="engineer" value="engineer">
+        <label for="engineer">Engineer</label>
+        <input type="radio" name="characterClass" id="medic" value="medic">
+        <label for="medic">Medic</label>
+        <input type="radio" name="characterClass" id="soldier" value="soldier">
+        <label for="soldier">Soldier</label><br>
+        <hr>
+        <legend>Select Character Gender:</legend><br>
+        <input type="radio" name="characterGender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="characterGender" id="female" value="female">
+        <label for="female">Female</label>
+        <input type="radio" name="characterGender" id="nonbinary" value="nonbinary">
+        <label for="nonbinary">Non-binary</label>
+        <input type="radio" name="characterGender" id="other" value="other">
+        <label for="other">Other</label>
+        <input type="radio" name="characterGender" id="notspecified" value="notspecified">
+        <label for="notspecified">Not Specified</label><br>
+        <hr>
+        <legend>Physical Attributes:</legend>
+        <p>Agility:</p>
+        <input type="range" name="agility" id="agility" list="ticks1">
+        <datalist id="ticks1">
+            <option value="High"></option>
+            <option value="Medium"></option>
+            <option value="Low"></option>  
+        </datalist>
+        <p>Endurance</p>
+        <input type="range" name="endurance" id="endurance" list="ticks2">
+        <datalist id="ticks2">
+            <option value="High"></option>
+            <option value="Medium"></option>
+            <option value="Low"></option>  
+        </datalist>
+        <p>Strength</p>
+        <input type="range" name="agility" id="agility" list="ticks3">
+        <datalist id="ticks3">
+            <option value="High"></option>
+            <option value="Medium"></option>
+            <option value="Low"></option>  
+        </datalist>
+        <hr>
+    </form>
+    </section>
+<!--Form Link to the Start Adeventure Page-->
+    <section>
+        <form action="adventure-start.html">
+            <input type="submit" value="Begin your Adventure!">
+        </form>
+    </section>
+</body>
+</html>
