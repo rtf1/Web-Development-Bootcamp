@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zombie-Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--Headings for Character Creation Page-->
@@ -17,11 +18,12 @@
     <!--Character Creation Form-->
     <section>
     <form id="characterForm">
-        <hr>
+        <!--Changed suring css task-->
+        <br>
         <label for="playerName">Select Character Name:</label><br>
         <input name="playerName" type="text"><br>
         <hr>
-        <legend>Select Character Expertise:</legend><br>
+        <legend class="legend">Select Character Expertise:</legend><br>
         <input type="radio" name="characterClass" id="engineer" value="engineer" checked="checked">
         <label for="engineer">Engineer</label>
         <input type="radio" name="characterClass" id="medic" value="medic">
@@ -29,7 +31,7 @@
         <input type="radio" name="characterClass" id="soldier" value="soldier">
         <label for="soldier">Soldier</label><br>
         <hr>
-        <legend>Select Character Gender:</legend><br>
+        <legend class="legend">Select Character Gender:</legend><br>
         <input type="radio" name="characterGender" id="male" value="male" checked="checked">
         <label for="male">Male</label>
         <input type="radio" name="characterGender" id="female" value="female">
@@ -41,32 +43,34 @@
         <input type="radio" name="characterGender" id="notspecified" value="notspecified">
         <label for="notspecified">Not Specified</label><br>
         <hr>
-        <legend>Physical Attributes:</legend>
+        <legend class="legend">Physical Attributes:</legend>
         <p>Agility:</p>
-        <input type="range" name="agility" id="agility" list="ticks1">
+        <input type="range" name="agility" id="agility" list="ticks1" class="slider">
         <datalist id="ticks1">
             <option value="High"></option>
             <option value="Medium"></option>
             <option value="Low"></option>  
         </datalist>
         <p>Endurance</p>
-        <input type="range" name="endurance" id="endurance" list="ticks2">
+        <input type="range" name="endurance" id="endurance" list="ticks2" class="slider">
         <datalist id="ticks2">
             <option value="High"></option>
             <option value="Medium"></option>
             <option value="Low"></option>  
         </datalist>
         <p>Strength</p>
-        <input type="range" name="agility" id="agility" list="ticks3">
+        <input type="range" name="agility" id="agility" list="ticks3" class="slider">
         <datalist id="ticks3">
             <option value="High"></option>
             <option value="Medium"></option>
             <option value="Low"></option>  
         </datalist>
-        <hr>
+        <!--Changed during css task-->
+        <br>
     </form>
     </section>
 <!--Form Link to the Start Adeventure Page-->
+    <br>
     <section>
         <form action="adventure-start.html">
             <input type="submit" value="Begin your Adventure!">

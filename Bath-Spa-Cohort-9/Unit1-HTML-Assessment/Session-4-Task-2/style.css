@@ -1,0 +1,52 @@
+/* Stylesheet for Zombie Game */
+
+html {
+    background-color: rgb(40, 40, 40);
+    padding: 25px 25px 25px 25px;
+    max-width: 60%;
+    margin: auto;
+    font-family: monospace;
+    color: rgb(100, 199, 1);
+    font-weight: bolder;
+}
+
+a {
+    color: rgb(100, 199, 1);
+}
+
+/* Sizing and Position of Images */
+
+img {
+    height: 400px; 
+    width:350px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+    border: solid 1px rgb(255, 255, 255);
+}
+
+hr{
+    border: solid 1px rgb(100, 199, 1);
+}
+
+section {
+    margin: auto;
+}
+
+.legend {
+    text-decoration-line: underline;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#characterForm {
+    background-color: rgb(55, 55, 55);
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(100, 199, 1);
+}
+
+.slider {
+    background: url(images/zombie.jpg);
+}
