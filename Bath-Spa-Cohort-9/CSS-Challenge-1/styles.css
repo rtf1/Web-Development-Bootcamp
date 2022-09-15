@@ -1,0 +1,101 @@
+
+/* HTML fonts */
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Assign Grid Items */
+.header {grid-area: header;}
+.nav {grid-area: nav;}
+.mainLeft {grid-area: mainLeft;}
+.mainRight {grid-area: mainRight;}
+.space {grid-area: space;}
+.testimonials {grid-area: testimonials;}
+
+/* Assign Grid Areas */
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+        "header header header header header"
+        "nav nav nav nav nav"
+        "mainLeft mainLeft space mainRight mainRight"
+        "testimonials testimonials testimonials testimonials testimonials";
+        gap: 5px;
+        padding: 15px;
+        background-color: black;
+        color: white;
+}
+
+/* Header and subheadings */
+.gridContainer .header {
+    height: 50vh;
+}
+
+#headerText {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250%;
+    text-align: center;
+}
+
+.subheading {
+    text-align: center;
+}
+
+/* Format link colour and style */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.gridContainer .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Main Article Text Compartments */
+
+.gridContainer .mainLeft {
+    padding: 10%;
+}
+
+.gridContainer .mainRight {
+    padding: 10%;
+}
+
+#leftText {
+    text-align: left;
+    position: relative;
+}
+
+.rightText {
+    text-align: left;
+    position: relative;
+}
+
+
+/* Img sizing */
+#banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.textImg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    object-fit: contain;
+}
+
+/* Testimonials */
+
+.gridContainer .testimonials {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
